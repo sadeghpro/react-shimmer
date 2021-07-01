@@ -1,6 +1,6 @@
 {
   "name": "react-image-shimmer",
-  "version": "3.2.0",
+  "version": "3.2.1",
   "description": "React Image (Suspense-like) Loader component that simulates a shimmer effect",
   "author": "gokcan and sadeghpro",
   "keywords": [
@@ -17,7 +17,7 @@
     "spinner"
   ],
   "license": "MIT",
-  "repository": "gokcan/react-shimmer",
+  "repository": "sadeghpro/react-shimmer",
   "main": "dist/index.js",
   "module": "dist/index.module.js",
   "source": "src/index.ts",
