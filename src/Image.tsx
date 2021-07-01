@@ -42,6 +42,7 @@ export default class SuspenseImage extends Component<ImageProps, State> {
     onLoad: PropTypes.func,
     delay: PropTypes.number,
     fadeIn: PropTypes.bool,
+    test: PropTypes.bool,
     NativeImgProps: PropTypes.object
   }
 
@@ -163,7 +164,7 @@ export default class SuspenseImage extends Component<ImageProps, State> {
     const { fallback, errorFallback, fadeIn, NativeImgProps } = this.props
     const { className, ...stripClassname } = NativeImgProps || {}
 
-    if (isLoading) {
+    if (isLoading || test) {
       return fallback
     } else if (error) {
       return errorFallback ? (

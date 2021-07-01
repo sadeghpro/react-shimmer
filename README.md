@@ -30,13 +30,13 @@
 ## Install
 
 ```bash
-npm i react-shimmer
+npm i react-image-shimmer
 ```
 
 or
 
 ```bash
-yarn add react-shimmer
+yarn add react-image-shimmer
 ```
 
 ## Usage
@@ -87,7 +87,8 @@ Property | Type | Required | Default value | Description
 `onLoad`|func|no||
 `delay`|number|no|| Delay in milliseconds before showing the `fallback`
 `fadeIn`|bool|no|false|Use built-in fade animation on img
-`NativeImgProps`|React.ImgHTMLAttributes<HTMLImageElement>|no||
+`test`|bool|no|false|For testing, this property remain `fallback` even after load image
+`nativeImgProps`|React.ImgHTMLAttributes<HTMLImageElement>|no||
 -----
 
 ## Contributing
