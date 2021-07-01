@@ -1,6 +1,6 @@
 {
   "name": "react-image-shimmer",
-  "version": "3.2.1",
+  "version": "3.2.2",
   "description": "React Image (Suspense-like) Loader component that simulates a shimmer effect",
   "author": "gokcan and sadeghpro",
   "keywords": [

@@ -19,7 +19,8 @@ export interface ImageProps {
   onLoad?: (image: HTMLImageElement) => any
   delay?: number
   fadeIn?: boolean
-  NativeImgProps?: ImgHTMLAttributes<HTMLImageElement>
+  test?: boolean
+  nativeImgProps?: ImgHTMLAttributes<HTMLImageElement>
 }
 
 interface State {
@@ -43,7 +44,7 @@ export default class SuspenseImage extends Component<ImageProps, State> {
     delay: PropTypes.number,
     fadeIn: PropTypes.bool,
     test: PropTypes.bool,
-    NativeImgProps: PropTypes.object
+    nativeImgProps: PropTypes.object
   }
 
   state: State = { ...initialState }
@@ -161,8 +162,8 @@ export default class SuspenseImage extends Component<ImageProps, State> {
 
   render() {
     const { src, error, isLoading } = this.state
-    const { fallback, errorFallback, fadeIn, NativeImgProps } = this.props
-    const { className, ...stripClassname } = NativeImgProps || {}
+    const { fallback, errorFallback, fadeIn, nativeImgProps, test } = this.props
+    const { className, ...stripClassname } = nativeImgProps || {}
 
     if (isLoading || test) {
       return fallback
