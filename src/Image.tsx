@@ -169,7 +169,7 @@ export default class SuspenseImage extends Component<ImageProps, State> {
       return errorFallback ? (
         errorFallback(error)
       ) : (
-        <span role='button' aria-label='Image failed to load'>
+        <span className={className} role='button' aria-label='Image failed to load'>
           ❌
         </span>
       )
